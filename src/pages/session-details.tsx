@@ -9,7 +9,7 @@ export function SessionDetails() {
 
   return (
     <>
-      <h2 className="font-bold text-gray-600 text-xl mb-3">
+      <h2 className="font-bold text-yellow-500 text-xl mb-3">
         Detalhes da sessão - ID {id}
       </h2>
 

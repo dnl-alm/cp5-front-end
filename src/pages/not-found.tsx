@@ -8,10 +8,10 @@ export function NotFound(){
 
         
 
-        <p className="text-gray-600 mb-6">O que você está procurando não foi encontrado</p>
+        <p className="text-gray-800 mb-6">O que você está procurando não foi encontrado!</p>
 
         <Link 
-          className="bg-red-600 text-white p-2 rounded hover:underline"
+          className="bg-yellow-500 text-white p-2 rounded transition-transform duration-200 hover:scale-105"
           to="/"
         > 
           Voltar para a Home

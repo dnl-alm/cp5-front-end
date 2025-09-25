@@ -26,13 +26,14 @@ export function AddSession( {sessions , onAdd}: AddSessionProps ) {
 
     return (
         <>
-            <h2 className="font-bold text-red-800 text-xl mb-3">
+            <h2 className="font-bold text-white text-3xl  mb-3">
+
             Adicionar nova sessão de estudos
             </h2>
 
-            <p className="text-lg font-bold text-gray-600">Total de sessões: {sessionTotal}</p>
+            <p className="text-lg font-bold text-gray-800">Total de sessões: {sessionTotal}</p>
 
-            <p className="text-lg font-bold text-gray-600">Tempo da sessão: {sessionMinutes}</p>
+            <p className="text-lg font-bold text-gray-800 pb-4">Tempo da sessão: {sessionMinutes}</p>
 
             <SessionForm onAdd={onAdd} />
       
