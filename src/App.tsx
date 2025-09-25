@@ -5,6 +5,7 @@ import type { StudySession } from "./types/study-session";
 import { AddSession } from "./pages/add-session";
 import { NotFound } from "./pages/not-found";
 import { Fallback } from "./components/fallback";
+import { Loading } from "./components/loading";
 
 
 function App() {
