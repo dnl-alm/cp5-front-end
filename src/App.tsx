@@ -1,4 +1,4 @@
-import { Suspense, useCallback, useState } from "react"
+import { lazy, Suspense, useCallback, useState } from "react"
 import { ErrorBoundary } from "react-error-boundary"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import type { StudySession } from "./types/study-session";
