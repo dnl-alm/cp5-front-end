@@ -5,7 +5,7 @@ interface SessionFormProps {
     onAdd: (session: StudySession) => void
 }
 
-export function StudyForm( {onAdd}: SessionFormProps ) {
+export function SessionForm( {onAdd}: SessionFormProps ) {
     const [subject, setSubject] = useState("")
     const [minutes, setMinutes] = useState(0)
     const [date, setDate] = useState("")

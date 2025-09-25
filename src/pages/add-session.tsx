@@ -1,13 +1,13 @@
 import { useMemo } from "react"
 import type { StudySession } from "../types/study-session"
-import { StudyForm } from "../components/session-form"
+import { SessionForm } from "../components/session-form"
 
-interface AddStudyProps {
+interface AddSessionProps {
     sessions: StudySession[]
     onAdd: (session: StudySession) => void
 }
 
-export function AddStudy( {sessions , onAdd}: AddStudyProps ) {
+export function AddSession( {sessions , onAdd}: AddSessionProps ) {
     const sessionTotal = useMemo(() => {
         return sessions.length
     }, [sessions])
@@ -34,7 +34,7 @@ export function AddStudy( {sessions , onAdd}: AddStudyProps ) {
 
             <p className="">Tempo da sessão: {sessionMinutes}</p>
 
-            <StudyForm onAdd={onAdd} />
+            <SessionForm onAdd={onAdd} />
       
         </>
     )
