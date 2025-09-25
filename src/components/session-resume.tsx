@@ -11,14 +11,14 @@ export function StudyResume( {session}: SessionResumeProps ) {
 
             <div className="flex flex-col gap-3">
 
-                <h2 className="font-bold text-gray-600">{session.subject}</h2>
+                <div className="flex justify-between items-start">
 
-                <div>
+                    <h2 className="font-bold text-gray-600">{session.subject}</h2>
 
                     <Link
                     to={`/session/${session.id}`}
                     state={{ session }}
-                    className="text-red-600 font-bold hover:underline rounded border border-blue-600 p-2"
+                    className="text-red-600 font-bold hover:underline rounded border border-red-600 p-2"
                     >
                     Detalhes
                     </Link>
