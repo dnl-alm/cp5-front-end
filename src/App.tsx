@@ -7,6 +7,7 @@ import { NotFound } from "./pages/not-found";
 import { Fallback } from "./components/fallback";
 import { Loading } from "./components/loading";
 import { Home } from "./pages/home";
+import { SessionDetails } from "./pages/session-details";
 
 
 function App() {
