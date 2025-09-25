@@ -8,28 +8,29 @@ import { Fallback } from "./components/fallback";
 import { Loading } from "./components/loading";
 import { Home } from "./pages/home";
 import { SessionDetails } from "./pages/session-details";
+import { Layout } from "./components/layout";
 
 
 function App() {
   const [sessions, setSession] = useState<StudySession[]>([]);
 
-    const addSession = useCallback((sessions: StudySession) => {
-      setSession((prev) => [...prev, sessions])
-    }, []);
+  const addSession = useCallback((sessions: StudySession) => {
+    setSession((prev) => [...prev, sessions])
+  }, []);
 
 
   return (
     <BrowserRouter>
       <ErrorBoundary FallbackComponent={Fallback}>
         <Suspense fallback={<Loading />}>
-          <Route>
-            <Routes path="/" element={<Layout />}>
-              <Route index element={<Home />} />
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home sessions={sessions} />} />
               <Route path="/add" element={<AddSession onAdd={addSession} sessions={sessions} />} />
               <Route path="/session/:id" element={<SessionDetails />} />
               <Route path="*" element={<NotFound />} />
-            </Routes>
-          </Route>
+            </Route>
+          </Routes>
         </Suspense>
       </ErrorBoundary>
     </BrowserRouter>
