@@ -9,7 +9,7 @@ interface HomeProps {
 export function Home( { sessions }: HomeProps) {
   return (
     <>
-      <h2 className="font-bold text-[#000000] text-2xl mb-6">
+      <h2 className="font-bold text-[white] text-2xl mb-6">
         Página Inicial - Lista de Sessões
       </h2>
  

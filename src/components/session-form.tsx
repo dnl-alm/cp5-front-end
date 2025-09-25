@@ -33,7 +33,7 @@ export function SessionForm( {onAdd}: SessionFormProps ) {
     return(
         <form
         onSubmit={handleSubmit}
-        className="bg-white shadow rounded-lg p-4 flex flex-col gap-3 mb-5 w-4/5"
+        className="bg-white shadow rounded-lg p-4 flex flex-col gap-3 mb-5 w-4/5 font-bold"
         >
             <label htmlFor="session-subject">Matéria de Estudo</label>
             <input
@@ -77,7 +77,7 @@ export function SessionForm( {onAdd}: SessionFormProps ) {
 
             <button
             type="submit"
-            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+            className="bg-yellow-500 text-black font-bold px-4 py-2 rounded hover:bg-yellow-700 transition-transform duration-200 hover:scale-101"
             >
             Adicionar sessão
             </button>

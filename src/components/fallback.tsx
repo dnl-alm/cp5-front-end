@@ -9,7 +9,7 @@ export function Fallback({error , resetErrorBoundary}: FallbackProps){
 
            <p className="mb-4 text-red-600">{error.message}</p>
 
-           <button onClick={resetErrorBoundary} className="px-4 py-2 bg-blue-600 text-white rounded-lg">Tentar Novamente</button>
+           <button onClick={resetErrorBoundary} className="px-4 py-2 bg-[#5682B1] text-black rounded-lg">Tentar Novamente</button>
 
         </div>
     )
