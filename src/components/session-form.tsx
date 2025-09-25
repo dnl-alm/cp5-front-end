@@ -33,7 +33,7 @@ export function SessionForm( {onAdd}: SessionFormProps ) {
     return(
         <form
         onSubmit={handleSubmit}
-        className=""
+        className="bg-white shadow rounded-lg p-4 flex flex-col gap-3 mb-5 w-4/5"
         >
             <label htmlFor="session-subject">Matéria de Estudo</label>
             <input
@@ -42,7 +42,7 @@ export function SessionForm( {onAdd}: SessionFormProps ) {
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
             placeholder="materia de estudo"
-            className=""
+            className="border rounded p-2"
             />
 
             <label htmlFor="session-minutes">Duração (min)</label>
@@ -52,7 +52,7 @@ export function SessionForm( {onAdd}: SessionFormProps ) {
             value={minutes}
             onChange={(e) => setMinutes(Number(e.target.value))}
             placeholder="Duração (min)"
-            className=""
+            className="border rounded p-2"
             />
 
             <label htmlFor="session-date">Data</label>
@@ -62,7 +62,7 @@ export function SessionForm( {onAdd}: SessionFormProps ) {
             value={date}
             onChange={(e) => setDate(e.target.value)}
             placeholder="Data"
-            className=""
+            className="border rounded p-2"
             />
 
             <label htmlFor="session-notes">Anotações</label>
@@ -72,12 +72,12 @@ export function SessionForm( {onAdd}: SessionFormProps ) {
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
             placeholder="Anotações"
-            className=""
+            className="border rounded p-2"
             />
 
             <button
             type="submit"
-            className=""
+            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
             >
             Adicionar sessão
             </button>

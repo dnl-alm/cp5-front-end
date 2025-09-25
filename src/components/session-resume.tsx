@@ -7,20 +7,20 @@ interface SessionResumeProps {
 
 export function StudyResume( {session}: SessionResumeProps ) {
     return (
-        <div className="">
+        <div className="w-3/5 rounded-lg shadow px-3 py-4 flex flex-col gap-5 mb-3 bg-white">
 
-            <div className="">
+            <div className="flex flex-col gap-3">
 
-                <h2>{session.subject}</h2>
+                <h2 className="font-bold text-gray-600">{session.subject}</h2>
 
                 <div>
 
-                    <Link 
+                    <Link
                     to={`/session/${session.id}`}
-                    state={session}
-                    className=""
+                    state={{ session }}
+                    className="text-blue-600 font-bold hover:underline rounded border border-blue-600 p-2"
                     >
-                    detalhes
+                    Detalhes
                     </Link>
 
                 </div>

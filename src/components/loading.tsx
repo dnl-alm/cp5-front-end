@@ -1,7 +1,7 @@
 export function Loading() {
   return (
-    <div className="">
-      <p className="">Carregando...</p>
+    <div className="text-center p-10">
+      <p className="animate-pulse text-gray-500">Carregando...</p>
     </div>
   );
 }

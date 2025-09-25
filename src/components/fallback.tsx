@@ -3,13 +3,13 @@ import type { FallbackProps } from "react-error-boundary";
 
 export function Fallback({error , resetErrorBoundary}: FallbackProps){
     return(
-        <div className="">
+        <div className="text-center py-20">
 
-           <h1 className="">Algo deu errado</h1>
+           <h1 className="text-2xl font-bold mb-4">Algo deu errado</h1>
 
-           <p className="">{error.message}</p>
+           <p className="mb-4 text-red-600">{error.message}</p>
 
-           <button onClick={resetErrorBoundary} className="">Tentar Novamente</button>
+           <button onClick={resetErrorBoundary} className="px-4 py-2 bg-blue-600 text-white rounded-lg">Tentar Novamente</button>
 
         </div>
     )
