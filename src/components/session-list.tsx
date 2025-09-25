@@ -5,7 +5,7 @@ interface SessionListProps {
     sessionList: StudySession[]
 }
 
-export function StudyList( {sessionList}: SessionListProps ) {
+export function SessionList( {sessionList}: SessionListProps ) {
     return(
         <>
             {sessionList.map((value) => {

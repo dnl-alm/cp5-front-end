@@ -19,7 +19,7 @@ export function SessionForm( {onAdd}: SessionFormProps ) {
             subject,
             minutes,
             date,
-            notes
+            notes,
         };
 
         onAdd(session)
@@ -69,7 +69,7 @@ export function SessionForm( {onAdd}: SessionFormProps ) {
             <input
             type="text"
             id="session-notes"
-            value={date}
+            value={notes}
             onChange={(e) => setNotes(e.target.value)}
             placeholder="Anotações"
             className=""
