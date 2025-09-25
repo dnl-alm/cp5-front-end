@@ -11,7 +11,7 @@ export function NotFound(){
         <p className="text-gray-600 mb-6">O que você está procurando não foi encontrado</p>
 
         <Link 
-          className="bg-blue-600 text-white p-2 rounded hover:underline"
+          className="bg-red-600 text-white p-2 rounded hover:underline"
           to="/"
         > 
           Voltar para a Home

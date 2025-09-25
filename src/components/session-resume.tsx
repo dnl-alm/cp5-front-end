@@ -18,7 +18,7 @@ export function StudyResume( {session}: SessionResumeProps ) {
                     <Link
                     to={`/session/${session.id}`}
                     state={{ session }}
-                    className="text-blue-600 font-bold hover:underline rounded border border-blue-600 p-2"
+                    className="text-red-600 font-bold hover:underline rounded border border-blue-600 p-2"
                     >
                     Detalhes
                     </Link>
