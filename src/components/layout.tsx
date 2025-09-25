@@ -2,13 +2,13 @@ import { Link, Outlet } from "react-router-dom";
 
 export function Layout() {
   return (
-    <div className="min-h-screen bg-gray-100">
-      <nav className="bg-white mb-6 shadow">
+    <div className="min-h-screen bg-[#CFFFE2]">
+      <nav className="bg-black mb-6 shadow">
         <div className="flex justify-center items-center p-4 gap-5">
-          <Link to="/" className="text-blue-600 hover:underline font-bold">
+          <Link to="/" className="text-white hover:underline font-bold">
             Home
           </Link>
-          <Link to="/add" className="text-blue-600 hover:underline font-bold">
+          <Link to="/add" className="text-white hover:underline font-bold">
             Nova sessão
           </Link>
         </div>
