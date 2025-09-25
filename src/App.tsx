@@ -2,8 +2,23 @@ import { Suspense, useCallback, useState } from "react"
 import { ErrorBoundary } from "react-error-boundary"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import type { StudySession } from "./types/study-session";
-import { AddSession } from "./pages/add-session";
-import { NotFound } from "./pages/not-found";
+
+
+const Home = lazy(() =>
+  import("./pages/home").then((m) => ({ default: m.Home }))
+);
+
+const AddSession = lazy(() =>
+  import("./pages/add-session").then((m) => ({ default: m.AddSession }))
+);
+
+const SessionDetails = lazy(() =>
+  import("./pages/session-details").then((m) => ({ default: m.SessionDetails }))
+);
+
+const NotFound = lazy(() =>
+  import("./pages/not-found").then((m) => ({ default: m.NotFound }))
+);
 
 
 function App() {
