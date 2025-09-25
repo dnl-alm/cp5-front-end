@@ -26,6 +26,7 @@ export function StudyResume( {session}: SessionResumeProps ) {
                 </div>
 
                 <h3>Data: {session.date}</h3>
+                <h3>Anotações: {session.notes}</h3>
 
             </div>
 
