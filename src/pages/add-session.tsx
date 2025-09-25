@@ -27,6 +27,7 @@ export function AddSession( {sessions , onAdd}: AddSessionProps ) {
     return (
         <>
             <h2 className="font-bold text-white text-3xl  mb-3">
+
             Adicionar nova sessão de estudos
             </h2>
 
